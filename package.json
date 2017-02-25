@@ -1,0 +1,22 @@
+{
+  "name": "hackfeed",
+  "version": "1.0.0",
+  "description": "A web app to post and read code snippets and projects",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dir": "dir"
+  },
+  "keywords": [
+    "hackfeed"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.2",
+    "body-parser": "^1.16.1",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.4"
+  }
+}
