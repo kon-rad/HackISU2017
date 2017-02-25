@@ -33,11 +33,11 @@ module.exports.getWastes = function (req, res){
  	Waste.find({$or: requestedWastes})
 		.sort({date: -1})
 		.exec(function(err, allWastes){
-						if (err){
-							res.error(err)
-						} else {
-							res.json(allWastes);
-						}
-						})
+			if (err){
+				res.error(err)
+			} else {
+				res.json(allWastes);
+			}
+	})
  };
 }

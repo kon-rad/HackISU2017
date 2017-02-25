@@ -1,6 +1,9 @@
 {
   "name": "hackfeed",
   "version": "0.0.1",
+  "scripts" : { 
+  	  "start" : "node server.js" 
+  	}, 
   "dependencies": {
     "angular": "^1.4.7",
     "body-parser": "^1.14.1",
