@@ -12,7 +12,7 @@ var profileController = require('./server/controllers/profile-controller');
 var wasteController = require('./server/controllers/waste-controller');
 var usersController = require('./server/controllers/users-controller');
 
-var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+var env = 'development';//process.env.NODE_ENV = process.env.NODE_ENV || 
 
 var url = "mongodb://konradmgnat:HackISU2017@ds161039.mlab.com:61039/hackerfeed";
 
@@ -54,6 +54,6 @@ app.post('/api/waste/get', wasteController.getWastes);
 app.get('/api/users/get', usersController.getUsers);
 app.post('/api/users/follow', usersController.followUser);
 
-app.listen('3000', function (){
+app.listen(process.env.PORT || '3000', function (){
     console.log("Listening for Local Host 3000");
 });
