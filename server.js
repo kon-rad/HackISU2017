@@ -12,9 +12,15 @@ var profileController = require('./server/controllers/profile-controller');
 var wasteController = require('./server/controllers/waste-controller');
 var usersController = require('./server/controllers/users-controller');
 
-var url = process.env.MONGOLAB_URI;
+
+
+var url = "mongodb://konradmgnat:HackISU2017@ds161039.mlab.com:61039/hackerfeed";
 
 mongoose.connect(url || 'mongodb://localhost:27017/hackfeed');
+
+
+
+
 
 app.use(bodyParser.json());
 app.use(multipartMiddleware);
