@@ -16,7 +16,7 @@ var usersController = require('./server/controllers/users-controller');
 
 var url = "mongodb://konradmgnat:HackISU2017@ds161039.mlab.com:61039/hackerfeed";
 
-mongoose.connect(url || 'mongodb://localhost:27017/hackfeed');
+mongoose.connect(url);
 
 
 
