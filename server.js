@@ -3,6 +3,8 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var multipart = require('connect-multiparty');
 var multipartMiddleware = multipart();
+var dotenv = require('dotenv');
+dotenv.config();
 
 var app = express();
 var authenticationController = require('./server/controllers/authentication-controller');
