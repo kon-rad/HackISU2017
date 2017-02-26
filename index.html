@@ -1,24 +1,70 @@
 <html ng-app="HackerFeed">
     <head>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="app/css/main.css" />
     </head>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-sm-offset-3t"
-      <div class="login-inner" ng-controller="NavigationController">
-        <div class="container">
-            <div ng-show="!loggedIn"> <input type="text" ng-model="login.email"> <input type="password" ng-model="login.password"> <button ng-click="logUserIn()">Login</button> <a ui-sref="signUp">Create An Account</a></div>
-            <div ng-show="loggedIn"> <a ui-sref="editProfile">Edit Profile</a> 
-									 <a ui-sref="follow">Follow Users</a>
-                                    <a ng-click="logOut();">Logout</a>
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                  <div class="login-inner" ng-controller="NavigationController">
+                    <div class="login-wrapper">
+                        <img class="logo-img" src="app/img/logo.png">
+                        <div ng-show="!loggedIn"> 
+                            <div class="button-wrapper">
+
+                            <input class="login-input" placeholder="Email Address" type="text" ng-model="login.email"> 
+                            <input class="login-input" placeholder="Password" type="password" ng-model="login.password"> 
+                                <button class="log-in-button sign-up-button login-input" ng-click="logUserIn()">Login</button>
+                                <div class="divider-or-body">
+                                    <div class="divider-line">
+                                    </div>
+                                      <div class="divider-line-or">
+                                        or
+                                      </div>
+                                      <div class="divider-line">
+                                      </div>
+                                </div>
+
+                                <button class="log-in-button fb-button" type="button">
+                                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                    Log in with Facebook
+                                </button>
+ 
+                                <a ui-sref="signUp">Create an Account</a>
+
+
+
+                            </div>
+                        </div>
+                        <div ng-show="loggedIn"> 
+                            <a ui-sref="editProfile">Edit Profile</a> 
+            				<a ui-sref="follow">Follow Users</a>
+                            <a ng-click="logOut();">Logout</a>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <body>
-  
+        <div class="container">
+            <div class="row">
+                <div class="app-body col-xs-12 col-md-8 col-md-offset-2">
+                        
+
+                    <div ui-view></div>
+                </div>
+            </div>
+        </div>
     
-        <div ui-view></div>
+
     </body>
     
     <script src="node_modules/angular/angular.js"></script>

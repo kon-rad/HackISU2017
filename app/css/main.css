@@ -1,9 +1,121 @@
 /* Base Elements */
-
+body { 
+  background: url(../img/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:white;
+}
 body {
     margin-top: 70px;
 }
+.app-body {
+	margin-top:200px;
+	text-align:center;
+	padding: 20px;
+	padding-top: 60px;
+	background-color: #2b2f5f;
+}
+.button-wrapper {
+	text-align:center;
+	margin:40px;
+	padding: 4px 20px;
+}
+.divider-or-body {
+  flex-direction: row;
+  margin: 10px 0px 18px;
+  align-items: stretch;
+  border: 0 solid #000;
+  box-sizing: border-box;
+  display: flex;
+  flex-shrink: 0;
+  padding: 0;
+  position: relative; }
 
+.divider-line {
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: #c7c7c7;
+  height: 1px;
+  position: relative;
+  top: .45em; }
+
+.divider-line-or {
+  flex-shrink: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 15px;
+  margin: 0 18px;
+  color: #999;
+  font-weight: 600; }
+
+.login-wrapper {
+	padding: 20px;
+	padding-top: 60px;
+	background-color: #2b2f5f;
+}
+.login-input {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #262626;
+    font-size: 14px;
+    padding: 9px 8px 7px;
+    margin-bottom: 7px;
+    -webkit-appearance: none;
+    width: 100%;
+    font-family: 'proxima-nova','Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+.logo-img {
+	width: 100%;
+	height: auto;
+}
+.log-in-button {
+  margin-top: 7px;
+  font-size: 14px;
+  line-height: 29px;
+  padding: 0 11px;
+  background: #3897f0;
+  border-color: #3897f0;
+  color: #fff;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: 600;
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  -webkit-appearance: none;
+  font-family: 'proxima-nova','Helvetica Neue',Arial,Helvetica,sans-serif;
+  align-items: flex-start;
+  text-align: center;
+  box-sizing: border-box;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block; 
+}
+.sign-up {
+  background-color: #fff;
+  width: 348px;
+  border: 1px solid #efefef;
+  border-radius: 1px;
+  margin: 5px auto;
+  padding: 20px 40px 20px;
+  color: #262626;
+  overflow: hidden;
+  text-align: center;
+  float: left;
+  display: inline-block; 
+}
 .waste-section img {
     width: 100px;
     height: 100px;
