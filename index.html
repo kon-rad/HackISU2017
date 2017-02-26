@@ -4,9 +4,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="app/css/main.css" />
     </head>
+
+    <body>
+
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                   <div class="login-inner" ng-controller="NavigationController">
                     <div class="login-wrapper">
                         <a href="localhost:3000">
@@ -41,7 +44,7 @@
                         </div>
                         <div ng-show="loggedIn"> 
                             <a ui-sref="editProfile">Edit Profile</a> 
-            				<a ui-sref="follow">Follow Users</a>
+                            <a ui-sref="follow">Follow Users</a>
                             <a ng-click="logOut();">Logout</a>
                         </div>
 
@@ -55,7 +58,8 @@
             </div>
         </div>
     </div>
-    <body>
+
+
         <div class="container">
             <div class="row">
                 <div class="app-body col-xs-12 col-md-8 col-md-offset-2">
