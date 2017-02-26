@@ -10,7 +10,9 @@ var profileController = require('./server/controllers/profile-controller');
 var wasteController = require('./server/controllers/waste-controller');
 var usersController = require('./server/controllers/users-controller');
 
-mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost:27017/hackfeed');
+var url = process.env.MONGOLAB_URI;
+
+mongoose.connect(url || 'mongodb://localhost:27017/hackfeed');
 
 app.use(bodyParser.json());
 app.use(multipartMiddleware);
